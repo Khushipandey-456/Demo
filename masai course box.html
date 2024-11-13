@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course box</title>
+    <style>
+        /* parent div */
+    #outer{
+        /* border: 2px solid black; */
+        width: 100%;
+        display:flex;
+        gap: 20px;
+        padding: 10px;
+        justify-content:space-evenly;
+        align-items: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    #outer > div{
+        border: 2px solid  rgb(230, 213, 213);
+        width: 30%;
+        font-family:arial;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+    }
+    span{
+        border-radius: 60%;
+        /* background-color: rgb(180, 230, 157); */
+        /* border: 2px solid lightgreen; */
+    }
+    h1{
+        font-size: 45px;
+    }
+    p{
+        font-size:30px;
+    }
+    /* styling button */
+    button{
+        height: 70px;
+        width: 100%;
+        border: 1px solid red;
+        background-color: white;
+        border-radius: 10px;
+        font-size: 30px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    button:hover{
+        background-color: red;
+        color: white;
+    }
+
+
+    </style>
+</head>
+<body>
+    <!-- Main container -->
+    <div id="outer">
+        <!-- software developement container -->
+        <div class="container">
+        <!-- software developement logo -->
+        <img width="100px" height="100px"
+        src="https://masai-website-images.s3.ap-south-1.amazonaws.com/383208d377bcec6abbc78ec5c6cd605e88549130edb5af33fa75a648a22b29fc_1fd500638f" alt=" Softwaredevelopement logo">
+        <!-- Description -->
+        <h1>Software Development</h1>
+        <hr>
+        <p>✅ Become job ready in 30-35 weeks.</p>
+        <p>✅ Opportunities :<b>Full Stack Developer, Backend Developer, Software Engineer & much more</b></p>
+        <!-- view details button -->
+        <Button>Veiw Details </Button>
+        </div>
+        <!-- Data analytics container -->
+        <div class="container" id="second">
+        <!-- Data analytics logo -->
+        <img width="100px" height="100px"
+        src="https://masai-website-images.s3.ap-south-1.amazonaws.com/10c326ed98b029b8b34538591be76b8900055f53894244a62f3a8655e42f73e4_2c1ea6cbf4" alt="dataanalyticslogo">
+        <!-- Description -->
+        <h1>Data Analytics</h1>
+        <hr>
+        <p>✅ Become job ready in 25 weeks.</p>
+        <p>✅ Opportunities :<b> Data Engineer, Data Analyst, Machine Learning Engineer & much more.</b></p>
+        <!-- view details button -->
+        <Button>Veiw Details </Button>
+        </div>
+    </div>  
+</body>
+</html>
